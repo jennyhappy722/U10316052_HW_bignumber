@@ -134,13 +134,13 @@ public class number{
 	}
 	//addtodoublea
 	public void doubleaddA(){
-		for(int i=0;i<=AjudgmentdoubleA()-1;i++)
+		for(int i=AjudgmentdoubleA()-1;i>=0;i--)
 		adouble.add(Integer.parseInt(aSBig.get(i)));
 
 	}
 	//add to double blist
 	public void doubleaddB(){
-		for(int i=0;i<=BjudgmentdoubleB()-1;i++)
+		for(int i=BjudgmentdoubleB()-1;i>=0;i--)
 		bdouble.add(Integer.parseInt(bSBig.get(i)));
 	}
 	//doublesamesize
@@ -173,7 +173,7 @@ public class number{
 	}
 	//print sum
 	public void adddoubleprint(){
-		for(int ia = (adddouble.size()-1)/2;ia >= 0; ia--){
+		for(int ia =0 ;ia <= (adddouble.size()-1)/2; ia++){
 			System.out.print(adddouble.get(ia));
 		}
 	}
