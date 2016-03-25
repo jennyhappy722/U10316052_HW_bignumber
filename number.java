@@ -30,7 +30,7 @@ public class number{
 	//add to list
 	public void BAaddtoList(){
 		for(int i=a.length()-1;i>=0;i--){
-			bSBig.add(bString.valueOf(b.charAt(i)));
+			bSBig.add(String.valueOf(b.charAt(i)));
 		}
 	}
 	//judment double
@@ -113,7 +113,7 @@ public class number{
 			carry=0;
 		}
 		for(int i=1;i<=bBig.size()-1;i++){		
-			int sum=aBig.get(i)+bBig.get(i);
+			sum=aBig.get(i)+bBig.get(i);
 			
 			if(sum>=10){
 				addBig.add(aBig.get(i)+bBig.get(i)-10+carry);
