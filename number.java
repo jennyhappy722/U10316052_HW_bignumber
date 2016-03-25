@@ -12,6 +12,7 @@ public class number{
 
 	ArrayList<Integer> adouble=new ArrayList<>();
 	ArrayList<Integer> bdouble=new ArrayList<>();
+	ArrayList<Integer> adddouble=new ArrayList<>();
 
 	number(){
 		Scanner input=new Scanner(System.in);
@@ -88,5 +89,50 @@ public class number{
 			System.out.print(addBig.get(ia));
 		}
 	}
+	public void doubleaddA(){
+		for(int i=0;i<=AjudgmentdoubleA()-1;i++)
+		adouble.add(Integer.parseInt(aSBig.get(i)));
+
+	}
+
+	public void doubleaddB(){
+		for(int i=0;i<=BjudgmentdoubleB()-1;i++)
+		bdouble.add(Integer.parseInt(bSBig.get(i)));
+	}
+
+	public void sizesamedouble(){
+		while(adouble.size()!=bdouble.size()){
+			if(bdouble.size()>adouble.size())
+				adouble.add(0);
+			else
+				bdouble.add(0);			
+		}		
+	}
+
+	public void doubleadd(){
+		int carry=0;
+		for(int i=0;i<=adouble.size()-1;i++){		
+			int sum=adouble.get(i)+bdouble.get(i);
+			
+			if(sum>=10){
+				adddouble.add(adouble.get(i)+bdouble.get(i)-10+carry);
+				carry=1;			
+			}else{ 
+				adddouble.add(adouble.get(i)+bdouble.get(i)+carry);
+				carry=0;
+			}
+		}
+		if(carry==1)
+			adddouble.add(1);
+	}
+	public void adddoubleprint(){
+		for(int ia = adddouble.size()-1;ia >= 0; ia--){
+			System.out.print(adddouble.get(ia));
+		}
+	}
+
+	
+
+	
 
 }
