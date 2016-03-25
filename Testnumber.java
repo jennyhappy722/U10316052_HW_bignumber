@@ -1,27 +1,22 @@
-import java.util.Scanner;
-import java.util.ArrayList;
+//u10316052
+import java.util.*;
 class Testnumber{
-
 	public static void main(String[] args) {
-
 		number umber=new number();
-		umber.AaddtoList();
-		System.out.println("");
-		umber.BAaddtoList();
-
+		umber.AaddtoList();//addtoStringAlist
+		umber.BAaddtoList();//addtoStringBlist
+		umber.doubleaddA();//addto String convert doubleA
+		umber.doubleaddB();//addto String convert doubleB
+		umber.sizesamedouble();//let same size
+		umber.doubleadd();//doubleadd
 		
-		umber.aBigaddtoList();
+		umber.aBigaddtoList();//addto String int
 		
-		umber.bBigaddtoList();
-
+		umber.bBigaddtoList();//addto String int
 		umber.sizesame();
-		umber.printa();
-		System.out.println("");
-		umber.printb();
 		umber.add();
-		System.out.println("");
 		umber.addprint();
-
-		
+		System.out.print(".");
+		umber.adddoubleprint();
 	}
 }
