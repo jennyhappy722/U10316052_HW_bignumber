@@ -18,7 +18,7 @@ public class number{
 	//input constrtor
 	number(){
 		Scanner input=new Scanner(System.in);
-		System.out.print("please input two math get you sum");
+		System.out.println("please input two math get you sum(only int+int ,double+double)");
 		a=input.nextLine();
 		b=input.nextLine();
 	}
@@ -173,8 +173,10 @@ public class number{
 	}
 	//print sum
 	public void adddoubleprint(){
+		if(Ajudgmentdouble()||Bjudgmentdouble()){
 		for(int ia =0 ;ia <= (adddouble.size()-1)/2; ia++){
 			System.out.print(adddouble.get(ia));
+		}
 		}
 	}
 
