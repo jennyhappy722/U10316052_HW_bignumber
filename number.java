@@ -8,6 +8,7 @@ public class number{
 	ArrayList<Integer> aBig=new ArrayList<>();//int
 	ArrayList<Integer> bBig=new ArrayList<>();//int
 	ArrayList<Integer> addBig=new ArrayList<>();//intsum
+	
 	ArrayList<String> aSBig=new ArrayList<>();//String judgment wheater.
 	ArrayList<String> bSBig=new ArrayList<>();//String judgment wheater
 
@@ -29,7 +30,7 @@ public class number{
 	}
 	//add to list
 	public void BAaddtoList(){
-		for(int i=a.length()-1;i>=0;i--){
+		for(int i=b.length()-1;i>=0;i--){
 			bSBig.add(String.valueOf(b.charAt(i)));
 		}
 	}
