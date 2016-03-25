@@ -39,6 +39,19 @@ public class number{
 	public boolean Bjudgmentdouble(){
 		return bSBig.contains(".");
 	}
+	public int BjudgmentdoubleB(){
+		if(Bjudgmentdouble())
+		return bSBig.indexOf(".");
+		else
+		return 0;
+	}
+
+	public int AjudgmentdoubleA(){
+		if(Ajudgmentdouble())
+		return aSBig.indexOf(".");
+		else
+		return 0;
+	}
 	//add to intlist
 	public void aBigaddtoList(){	
 		for(int i=0;i<=aSBig.size()-1;i++){
