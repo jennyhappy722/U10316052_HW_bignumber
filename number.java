@@ -30,7 +30,7 @@ public class number{
 	//add to list
 	public void BAaddtoList(){
 		for(int i=a.length()-1;i>=0;i--){
-			bSBig.add(bString.valueOf(.charAt(i)));
+			bSBig.add(bString.valueOf(b.charAt(i)));
 		}
 	}
 	//judment double
