@@ -17,7 +17,7 @@ public class number{
 	//input constrtor
 	number(){
 		Scanner input=new Scanner(System.in);
-		System.out.print("請輸入兩數，讓兩數加總");
+		System.out.print("please input two math get you sum");
 		a=input.nextLine();
 		b=input.nextLine();
 	}
@@ -62,12 +62,11 @@ public class number{
 				aBig.add(Integer.parseInt(aSBig.get(i)));
 			}
 		}else{	
-			for(int i=0;i<=aSBig.size()-1;i++){
+			for(int i=0;i<=aSBig.size()-1;i++)
 				aBig.add(Integer.parseInt(aSBig.get(i)));
-			}
+			
 		}		
 	}
-	public void bBigaddtoList(){	
 	//add to intlist
 	public void bBigaddtoList(){
 		if(Ajudgmentdouble()){
